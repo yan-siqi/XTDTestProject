@@ -1,0 +1,207 @@
+{
+    "sceneTree": {
+        "root": {
+            "children": [
+                {
+                    "title": "基础图层",
+                    "ref": "jctc",
+                    "expand": false,
+                    "children": [
+                        {
+                            "title": "影像",
+                            "ref": "yx",
+                            "expand": false,
+                            "children": [
+                                {
+                                    "ref": "qq",
+                                    "czmObject": {
+                                        "xbsjType": "Imagery",
+                                        "xbsjGuid": "395c738f-ac5f-40ae-a106-07d0ddbe0854",
+                                        "name": "全球",
+                                        "xbsjImageryProvider": {
+                                            "XbsjImageryProvider": {
+                                                "url": "http://online1.map.bdimg.com/onlinelabel/?qt=tile&x={x}&y={y}&z={z}&styles=pl&scaler=1&p=1",
+                                                "srcCoordType": "BD09"
+                                            },
+                                            "UrlTemplateImageryProvider": {},
+                                            "WebMapServiceImageryProvider": {},
+                                            "WebMapTileServiceImageryProvider": {},
+                                            "ArcGisMapServerImageryProvider": {},
+                                            "createTileMapServiceImageryProvider": {}
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "title": "高程",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "业务图层",
+                    "ref": "ywtc",
+                    "children": []
+                },
+                {
+                    "title": "事件图层",
+                    "ref": "sjtc",
+                    "children": []
+                }
+            ]
+        }
+    },
+    "cameraViewManager": {
+        "globe": {
+            "position": [
+                2.1031217486531677,
+                0.5042461979915104,
+                22191651.019924622
+            ],
+            "rotation": [
+                0,
+                -1.5704894508531937,
+                0
+            ],
+            "near": 0.1,
+            "far": 10000000000
+        },
+        "china": {
+            "position": [
+                1.8770894704964525,
+                0.662547523843314,
+                8511735.797037361
+            ],
+            "rotation": [
+                0,
+                -1.5701114159178209,
+                0
+            ],
+            "near": 0.1,
+            "far": 10000000000
+        },
+        "lastView": {
+            "position": [
+                2.0322017329314983,
+                0.6947540514326733,
+                1036.5124149972432
+            ],
+            "rotation": [
+                2.0564166264033386,
+                -0.08568102551545764,
+                0.0029395149614197535
+            ],
+            "fov": 1.0471975511965976,
+            "near": 0.1,
+            "far": 10000000000
+        }
+    },
+    "cameraFlight": {
+        "xbsjType": "CameraFlight",
+        "xbsjGuid": "77d8ad61-4601-485d-8b88-7c3ae89124f1",
+        "rotateGlobe": {
+            "xbsjType": "RotateGlobe",
+            "xbsjGuid": "b8761529-cd31-4b16-be8a-eafea371ebbb",
+            "latitude": 0.6632251157578453
+        },
+        "rotateCenter": {
+            "xbsjType": "RotateCenter",
+            "xbsjGuid": "17125d75-fd9e-4248-94bb-9c7e4142eec0",
+            "pitch": -0.5235987755982988
+        },
+        "track": {
+            "xbsjType": "CameraTrack",
+            "xbsjGuid": "f79d5a53-3b66-4b61-8aeb-44fb49964f3e"
+        }
+    },
+    "weather": {
+        "fog": {},
+        "sun": {},
+        "skyBox": {},
+        "moon": {},
+        "rain": {},
+        "snow": {},
+        "cloud": {},
+        "atmosphere": {},
+        "rainPostProcess": {},
+        "snowPostProcess": {},
+        "fogPostProcess": {}
+    },
+    "terrainEffect": {
+        "elevation": {
+            "xbsjType": "ElevationRamp",
+            "xbsjGuid": "13b047fa-f1e3-4a6d-93f5-92399d8917e6"
+        },
+        "slope": {
+            "xbsjType": "SlopeRamp",
+            "xbsjGuid": "866fff06-33fd-478f-a804-e369dd1f01b2"
+        },
+        "aspect": {
+            "xbsjType": "AspectRamp",
+            "xbsjGuid": "108c6676-9db3-4c9f-8751-07a2d05315f3"
+        },
+        "contour": {},
+        "restrict": {},
+        "globeTranslucency": {}
+    },
+    "postProcess": {
+        "xbsjType": "PostProcess",
+        "xbsjGuid": "9f6231c7-1273-4eca-9711-5cb2957ae56e",
+        "ambientOcclusion": {
+            "xbsjType": "AmbientOcclusionStage",
+            "xbsjGuid": "e187963b-1c06-4a4f-aebf-3d62a558c448"
+        },
+        "bloom": {
+            "xbsjType": "BloomStage",
+            "xbsjGuid": "07dac611-fac8-46f5-8edc-c2b251b99589"
+        },
+        "blackAndWhite": {
+            "xbsjType": "BlackAndWhiteStage",
+            "xbsjGuid": "182455ef-95fc-473c-bc6d-6352bd420814"
+        },
+        "brightness": {
+            "xbsjType": "BrightnessStage",
+            "xbsjGuid": "4ddc00af-bfcb-4fef-86c0-a0edb8ca7863"
+        },
+        "depthOfField": {
+            "xbsjType": "DepthOfFieldStage",
+            "xbsjGuid": "982f5b07-06a0-49f3-9b16-55b1e59f4fdb"
+        },
+        "lensFlare": {
+            "xbsjType": "LensFlareStage",
+            "xbsjGuid": "7adbe0df-b944-49db-b4ce-37fbb051cb98"
+        },
+        "mosaic": {
+            "xbsjType": "MosaicStage",
+            "xbsjGuid": "af5c7167-ff68-4fe1-bb0e-f462fd711fa8"
+        },
+        "nightVision": {
+            "xbsjType": "NightVisionStage",
+            "xbsjGuid": "f09d2e17-8867-4aa4-afee-146aee385643"
+        },
+        "silhouette": {
+            "xbsjType": "XbsSilhouetteStage",
+            "xbsjGuid": "4e70a7ef-ae3f-4f68-93c5-8c7338c654ed"
+        }
+    },
+    "effect": {
+        "xbsjType": "Effect",
+        "xbsjGuid": "d355d574-2875-479e-97c0-ba4f4b6a1605",
+        "shadow": {
+            "xbsjType": "Shadow",
+            "xbsjGuid": "27a5f764-c4f1-41ea-80df-26581b2c41f6"
+        },
+        "forceSunPos": {
+            "position": [
+                2.0245819323134224,
+                0.6981317007977318,
+                10000000
+            ]
+        }
+    },
+    "camera": {},
+    "interaction": {
+        "picking": {}
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "czmObject": {
+        "xbsjType": "Imagery",
+        "xbsjGuid": "6fb4ae2f-01d9-46f6-93af-e78347ce610a",
+        "name": "beijing_image",
+        "rectangle": [
+            2.0144041356824007,
+            0.6883833591808336,
+            2.050903836155496,
+            0.7166187990692222
+        ],
+        "xbsjImageryProvider": {
+            "XbsjImageryProvider": {},
+            "UrlTemplateImageryProvider": {},
+            "WebMapServiceImageryProvider": {},
+            "WebMapTileServiceImageryProvider": {
+                "url": "http://192.168.0.224:9090/geowebcache/service/wmts/rest/beijing_image/{style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}?format=image/png",
+                "format": "image/png",
+                "layer": "beijing_image",
+                "style": "[object Object]",
+                "tileMatrixSetID": "EPSG:4326_beijing_image",
+                "tileMatrixLabels": [
+                    "EPSG:4326_beijing_image:1",
+                    "EPSG:4326_beijing_image:2",
+                    "EPSG:4326_beijing_image:3",
+                    "EPSG:4326_beijing_image:4",
+                    "EPSG:4326_beijing_image:5",
+                    "EPSG:4326_beijing_image:6",
+                    "EPSG:4326_beijing_image:7",
+                    "EPSG:4326_beijing_image:8",
+                    "EPSG:4326_beijing_image:9",
+                    "EPSG:4326_beijing_image:10",
+                    "EPSG:4326_beijing_image:11",
+                    "EPSG:4326_beijing_image:12",
+                    "EPSG:4326_beijing_image:13",
+                    "EPSG:4326_beijing_image:14",
+                    "EPSG:4326_beijing_image:15",
+                    "EPSG:4326_beijing_image:16",
+                    "EPSG:4326_beijing_image:17",
+                    "EPSG:4326_beijing_image:18"
+                ],
+                "tilingScheme": "Geographic",
+                "maximumLevel": 17
+            },
+            "ArcGisMapServerImageryProvider": {},
+            "createTileMapServiceImageryProvider": {},
+            "type": "WebMapTileServiceImageryProvider"
+        }
+    }
+}
+}
