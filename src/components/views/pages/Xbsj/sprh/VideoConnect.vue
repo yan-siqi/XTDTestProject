@@ -86,6 +86,7 @@
 <script>
 import sprhJson from "../../../../../../public/sprhJson.json";
 export default {
+  name:'sprh',// 视频融合
   data() {
     return {
       twoPostionsEditing: true,

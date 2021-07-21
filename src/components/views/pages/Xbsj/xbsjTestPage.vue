@@ -13,7 +13,12 @@
           <VideoConnect />
         </div>
       </li>
-      <li></li>
+      <li @click="curItemClick('mapjq')">
+        mapv-集群:
+        <div v-show="isJq">
+          <Mapvjiqun />
+        </div>
+      </li>
       <li></li>
       <li></li>
       <li></li>
@@ -25,16 +30,19 @@
 <script>
 import Manyou from "./manyou/Manyou.vue";
 import VideoConnect from "./sprh/VideoConnect.vue";
+import Mapvjiqun from "./mapv-jiqun/Mapvjiqun.vue";
 export default {
   name: "xbsjtestcom",
   components: {
     Manyou,
     VideoConnect,
+    Mapvjiqun,
   },
   data() {
     return {
       isManyou: false, // 漫游
       isVideoConnect: false, // 视频融合
+      isJq: false, //mapv 集群
     };
   },
   methods: {
@@ -43,8 +51,13 @@ export default {
         case "manyou":
           this.isManyou = !this.isManyou;
           break;
-        case 'sprh':
-          this.isVideoConnect = !this.isVideoConnect
+        case "sprh":
+          this.isVideoConnect = !this.isVideoConnect;
+          break;
+        case "mapjq":
+          this.isJq = !this.isJq;
+          break;
+        default:
           break;
       }
     },
@@ -63,8 +76,16 @@ export default {
     left: 10px;
     top: 10px;
     height: 500px;
-    background-color: black;
-    color: #eee;
+    background-color: #555;
+    color: #000;
+    font-family: '微软雅黑';
+    li{
+      text-align: left;
+      height: 30px;
+      border: 1px solid #000;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
   }
 }
 </style>

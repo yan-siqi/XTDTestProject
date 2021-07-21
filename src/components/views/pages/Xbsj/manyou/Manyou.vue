@@ -36,7 +36,7 @@
 
 <script>
 export default {
-  name: "xbsjtestpage",
+  name: "manyoucom",
   data() {
     return {
       timer: null, // 定义定时器
