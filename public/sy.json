@@ -1,0 +1,36 @@
+[
+    {
+        "czmObject": {
+            "name": "大雁塔",
+            "xbsjType": "Tileset",
+            "xbsjUseOriginTransform": false,
+            "skipLevelOfDetail": false
+        }
+    },
+    {
+        "czmObject": {
+            "name": "默认影像",
+            "xbsjType": "Imagery",
+            "xbsjImageryProvider": "XE.Obj.Imagery.defaultImageryProviderConfig"
+        }
+    },
+    {
+        "ref": "viewshed",
+        "czmObject": {
+            "xbsjType": "Viewshed",
+            "name": "视域分析1",
+            "position": [
+                1.9017020682146637,
+                0.5972460779975362,
+                444.77
+            ],
+            "rotation": [
+                3.1610812679605633,
+                -0.35387649068319726,
+                6.283128281412125
+            ],
+            "near": 1,
+            "far": 200
+        }
+    }
+]

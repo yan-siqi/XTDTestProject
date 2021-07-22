@@ -175,6 +175,7 @@ export default {
   beforeDestroy() {
     // vue程序销毁时，需要清理相关资源
     this._earth = this._earth && this._earth.destroy();
+
   },
 };
 </script>
