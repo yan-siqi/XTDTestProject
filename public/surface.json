@@ -1,0 +1,31 @@
+{
+    "czmObject": {
+        "xbsjType": "Model",
+        "xbsjGuid": "ab2383d3-45cf-456f-b378-8a9e2f8abeca",
+        "name": "飞机模型",
+        "url": "./assets/feiji.glb",
+        "minimumPixelSize": 13,
+        "distanceDisplayCondition": [
+            0,
+            6368636
+        ],
+        "color": [
+            0.2,
+            0,
+            1,
+            1
+        ],
+        "silhouetteColor": [
+            0,
+            0,
+            0,
+            1
+        ],
+        "xbsjPosition": [
+            1.9016992198373244,
+            0.5972440952278557,
+            434.922124523812
+        ]
+    },
+    "ref": "model1"
+}

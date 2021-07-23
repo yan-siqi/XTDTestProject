@@ -54,23 +54,7 @@
                         {
                             "title": "倾斜",
                             "ref": "qx",
-                            "expand": false,
                             "children": [
-                                {
-                                    "czmObject": {
-                                        "xbsjType": "Tileset",
-                                        "xbsjGuid": "9654c6cd-ddbe-447c-b40c-d44449833a6e",
-                                        "name": "故宫",
-                                        "url": "https://lab.earthsdk.com/model/70e1bbd0008e11ebae58995d10455715/tileset.json",
-                                        "xbsjPosition": [
-                                            2.031402677284888,
-                                            0.696690959425478,
-                                            0
-                                        ],
-                                        "xbsjClippingPlanes": {},
-                                        "xbsjCustomShader": {}
-                                    }
-                                },
                                 {
                                     "czmObject": {
                                         "xbsjType": "Tileset",
@@ -91,6 +75,7 @@
                         },
                         {
                             "title": "高程",
+                            "expand": false,
                             "children": [
                                 {
                                     "czmObject": {
@@ -157,14 +142,14 @@
         },
         "lastView": {
             "position": [
-                1.90170527310573,
-                0.5972274598485857,
-                569.037669332569
+                1.9016954032665068,
+                0.5972297418403396,
+                468.5228990897914
             ],
             "rotation": [
-                7.105427357601002e-14,
-                -0.7855336295529529,
-                6.283185307179583
+                0.0750462912299259,
+                -0.36760548652816083,
+                0.00025093632947204014
             ],
             "fov": 1.0471975511965976,
             "near": 0.1,
@@ -217,6 +202,8 @@
         },
         "contour": {},
         "restrict": {},
+        "subSurfaceEnabled": true,
+        "surfaceOpacity": 0.8,
         "globeTranslucency": {}
     },
     "postProcess": {

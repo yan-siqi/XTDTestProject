@@ -151,16 +151,16 @@ export default {
           );
           curThis._disposers.push(
             XE.MVVM.bind(curThis, "near", viewshed, "near")
-          );
+          );// 最近可视距离
           curThis._disposers.push(
             XE.MVVM.bind(curThis, "far", viewshed, "far")
-          );
+          );// 最远可视距离
           curThis._disposers.push(
             XE.MVVM.bindDegreeRadian(curThis, "fovH", viewshed, "fovH")
-          );
+          );// 水平广角 横向可是范围
           curThis._disposers.push(
             XE.MVVM.bindDegreeRadian(curThis, "fovV", viewshed, "fovV")
-          );
+          );// 垂直广角 纵向可是范围
         }
       }, 1000); // 10秒后构建json
     },

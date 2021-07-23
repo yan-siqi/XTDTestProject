@@ -31,7 +31,12 @@
           <Vision />
         </div>
       </li>
-      <li></li>
+      <li @click="curItemClick('surface')">
+        地下模式和地表透明
+        <div v-if="isSurface">
+          <Surface />
+        </div>
+      </li>
       <li></li>
     </ul>
   </div>
@@ -43,6 +48,7 @@ import VideoConnect from "./sprh/VideoConnect.vue";
 import Mapvjiqun from "./mapv-jiqun/Mapvjiqun.vue";
 import HeatMap from "./heatmap/HeatMap.vue";
 import Vision from "./vision/vision.vue";
+import Surface from "./surface/Surface.vue"
 export default {
   name: "xbsjtestcom",
   components: {
@@ -50,7 +56,8 @@ export default {
     VideoConnect,
     Mapvjiqun,
     HeatMap,
-    Vision
+    Vision,
+    Surface
   },
   data() {
     return {
@@ -59,6 +66,7 @@ export default {
       isJq: false, //mapv 集群
       isheatmap: false, // 热力图
       isVision: false, // 视域
+      isSurface: false, // 展示地下模式和地表不透明
     };
   },
   methods: {
@@ -70,6 +78,7 @@ export default {
           this.isJq = false;
           this.isheatmap = false;
           this.isVision = false;
+          this.isSurface = false;
           break;
         case "sprh":
           this.isVideoConnect = true;
@@ -77,6 +86,7 @@ export default {
           this.isJq = false;
           this.isheatmap = false;
           this.isVision = false;
+          this.isSurface = false;
           break;
         case "mapjq":
           this.isJq = true;
@@ -84,6 +94,7 @@ export default {
           this.isManyou = false;
           this.isheatmap = false;
           this.isVision = false;
+          this.isSurface = false;
           break;
         case "mapvrlt":
           this.isVideoConnect = false;
@@ -91,6 +102,7 @@ export default {
           this.isJq = false;
           this.isheatmap = true;
           this.isVision = false;
+          this.isSurface = false;
           break;
         case "sy":
           this.isVision = true;
@@ -98,6 +110,15 @@ export default {
           this.isManyou = false;
           this.isJq = false;
           this.isheatmap = false;
+          this.isSurface = false;
+          break;
+        case "surface":
+          this.isVision = false;
+          this.isVideoConnect = false;
+          this.isManyou = false;
+          this.isJq = false;
+          this.isheatmap = false;
+          this.isSurface = true;
           break;
         default:
           break;
@@ -131,7 +152,7 @@ export default {
       box-sizing: border-box;
       cursor: pointer;
       position: relative;
-      line-height:30px;
+      line-height: 30px;
     }
     li:hover {
       color: #1aade6;
