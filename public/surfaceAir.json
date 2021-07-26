@@ -1,0 +1,307 @@
+{
+    "sceneTree": {
+        "root": {
+            "children": [
+                {
+                    "title": "基础图层",
+                    "ref": "jctc",
+                    "expand": false,
+                    "children": [
+                        {
+                            "title": "影像",
+                            "ref": "yx",
+                            "children": [
+                                {
+                                    "ref": "qq",
+                                    "czmObject": {
+                                        "xbsjType": "Imagery",
+                                        "xbsjGuid": "395c738f-ac5f-40ae-a106-07d0ddbe0854",
+                                        "name": "全球",
+                                        "xbsjImageryProvider": {
+                                            "XbsjImageryProvider": {
+                                                "url": "http://online1.map.bdimg.com/onlinelabel/?qt=tile&x={x}&y={y}&z={z}&styles=pl&scaler=1&p=1",
+                                                "srcCoordType": "BD09"
+                                            },
+                                            "UrlTemplateImageryProvider": {},
+                                            "WebMapServiceImageryProvider": {},
+                                            "WebMapTileServiceImageryProvider": {},
+                                            "ArcGisMapServerImageryProvider": {},
+                                            "createTileMapServiceImageryProvider": {}
+                                        }
+                                    }
+                                },
+                                {
+                                    "ref": "gdyx",
+                                    "czmObject": {
+                                        "xbsjType": "Imagery",
+                                        "xbsjGuid": "b6ce28bc-a412-4415-bc84-d619c9bf8d12",
+                                        "name": "高德影像",
+                                        "xbsjImageryProvider": {
+                                            "XbsjImageryProvider": {
+                                                "url": "http://webst02.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}",
+                                                "srcCoordType": "GCJ02"
+                                            },
+                                            "UrlTemplateImageryProvider": {},
+                                            "WebMapServiceImageryProvider": {},
+                                            "WebMapTileServiceImageryProvider": {},
+                                            "ArcGisMapServerImageryProvider": {},
+                                            "createTileMapServiceImageryProvider": {}
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "title": "倾斜",
+                            "ref": "qx",
+                            "children": [
+                                {
+                                    "czmObject": {
+                                        "xbsjType": "Tileset",
+                                        "xbsjGuid": "b272e672-12d7-4e39-ab37-6ad91fc26fc0",
+                                        "name": "倾斜测试",
+                                        "url": "https://lab.earthsdk.com/model/66327820ce5f11eab7a4adf1d6568ff7/tileset.json",
+                                        "xbsjPosition": [
+                                            1.9017002809975097,
+                                            0.5972446887154512,
+                                            3.0624089850964736e-9
+                                        ],
+                                        "xbsjUseOriginTransform": false,
+                                        "xbsjClippingPlanes": {},
+                                        "xbsjCustomShader": {}
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "title": "高程",
+                            "expand": false,
+                            "children": [
+                                {
+                                    "czmObject": {
+                                        "xbsjType": "Terrain",
+                                        "xbsjGuid": "78afc6fe-f1ab-4d97-a310-9ec6fd3ce672",
+                                        "name": "中国14级（测试）",
+                                        "xbsjTerrainProvider": {
+                                            "type": "XbsjCesiumTerrainProvider",
+                                            "XbsjEllipsoidTerrainProvider": {},
+                                            "XbsjCesiumTerrainProvider": {
+                                                "url": "https://lab.earthsdk.com/terrain/577fd5b0ac1f11e99dbd8fd044883638",
+                                                "requestVertexNormals": true,
+                                                "requestWaterMask": true
+                                            },
+                                            "GoogleEarthEnterpriseTerrainProvider": {}
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "业务图层",
+                    "ref": "ywtc",
+                    "expand": false,
+                    "children": [
+                        {
+                            "title": "模型",
+                            "ref": "yw1",
+                            "expand": false,
+                            "children": [
+                                {
+                                    "ref": "fjmx",
+                                    "czmObject": {
+                                        "xbsjType": "Model",
+                                        "xbsjGuid": "99b4be44-4fec-4c02-ab80-c93483d305bb",
+                                        "name": "飞机模型",
+                                        "url": "./assets/feiji.glb",
+                                        "distanceDisplayCondition": [
+                                            0,
+                                            5000
+                                        ],
+                                        "color": [
+                                            0,
+                                            0.996078431372549,
+                                            1,
+                                            1
+                                        ],
+                                        "silhouetteColor": [
+                                            0,
+                                            0,
+                                            0,
+                                            1
+                                        ],
+                                        "xbsjPosition": [
+                                            1.9016955155927044,
+                                            0.5972450395348012,
+                                            428.1730120425715
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "事件图层",
+                    "ref": "sjtc",
+                    "children": []
+                }
+            ]
+        }
+    },
+    "cameraViewManager": {
+        "globe": {
+            "position": [
+                2.1031217486531677,
+                0.5042461979915104,
+                22191651.019924622
+            ],
+            "rotation": [
+                0,
+                -1.5704894508531937,
+                0
+            ],
+            "near": 0.1,
+            "far": 10000000000
+        },
+        "china": {
+            "position": [
+                1.8770894704964525,
+                0.662547523843314,
+                8511735.797037361
+            ],
+            "rotation": [
+                0,
+                -1.5701114159178209,
+                0
+            ],
+            "near": 0.1,
+            "far": 10000000000
+        },
+        "lastView": {
+            "position": [
+                1.9016491262150215,
+                0.5971549229925996,
+                1020.7109960549616
+            ],
+            "rotation": [
+                0.16751449399184093,
+                -0.8351143110448747,
+                0.0007776913180652656
+            ],
+            "fov": 1.0471975511965976,
+            "near": 0.1,
+            "far": 10000000000
+        }
+    },
+    "cameraFlight": {
+        "xbsjType": "CameraFlight",
+        "xbsjGuid": "90c4a083-ab52-4adb-9a9c-0b64d30671e1",
+        "rotateGlobe": {
+            "xbsjType": "RotateGlobe",
+            "xbsjGuid": "eff46a18-5e76-45fa-9899-81417a2a8451",
+            "latitude": 0.6632251157578453
+        },
+        "rotateCenter": {
+            "xbsjType": "RotateCenter",
+            "xbsjGuid": "43b86bb0-41d3-44f3-bfd6-c4f8065b1a4e",
+            "pitch": -0.5235987755982988
+        },
+        "track": {
+            "xbsjType": "CameraTrack",
+            "xbsjGuid": "7502a4cd-4cd8-4571-82f7-f2ab52a6881e"
+        }
+    },
+    "weather": {
+        "fog": {},
+        "sun": {},
+        "skyBox": {},
+        "moon": {},
+        "rain": {},
+        "snow": {},
+        "cloud": {},
+        "atmosphere": {},
+        "rainPostProcess": {},
+        "snowPostProcess": {},
+        "fogPostProcess": {}
+    },
+    "terrainEffect": {
+        "elevation": {
+            "xbsjType": "ElevationRamp",
+            "xbsjGuid": "42e331a1-529c-4e04-8dbe-5ff2744a6e1b"
+        },
+        "slope": {
+            "xbsjType": "SlopeRamp",
+            "xbsjGuid": "b14a4fa2-ed44-4d85-adc9-0cc8c0648dad"
+        },
+        "aspect": {
+            "xbsjType": "AspectRamp",
+            "xbsjGuid": "b49504c1-19a4-4760-bdff-2a465d1a0762"
+        },
+        "contour": {},
+        "restrict": {},
+        "subSurfaceEnabled": true,
+        "surfaceOpacity": 0.43,
+        "globeTranslucency": {}
+    },
+    "postProcess": {
+        "xbsjType": "PostProcess",
+        "xbsjGuid": "a71ecdd6-0573-48f4-8d28-7febf1c22672",
+        "ambientOcclusion": {
+            "xbsjType": "AmbientOcclusionStage",
+            "xbsjGuid": "efee0224-6475-4c53-bf2c-cd971965d88c"
+        },
+        "bloom": {
+            "xbsjType": "BloomStage",
+            "xbsjGuid": "c29c31bb-a2ea-4f2a-a634-88218ee6ae55"
+        },
+        "blackAndWhite": {
+            "xbsjType": "BlackAndWhiteStage",
+            "xbsjGuid": "5478094f-8206-4a11-b471-7178b8338fff"
+        },
+        "brightness": {
+            "xbsjType": "BrightnessStage",
+            "xbsjGuid": "a4a1b0f7-af57-464c-8ca0-b66fbd38fb18"
+        },
+        "depthOfField": {
+            "xbsjType": "DepthOfFieldStage",
+            "xbsjGuid": "5c0ff9d5-2cc9-4429-9f17-f543dbcaf120"
+        },
+        "lensFlare": {
+            "xbsjType": "LensFlareStage",
+            "xbsjGuid": "ca344876-2d2b-4ab0-9902-cdcf09e21bde"
+        },
+        "mosaic": {
+            "xbsjType": "MosaicStage",
+            "xbsjGuid": "14badd7a-1af1-4082-9ad8-4e1bb64869c3"
+        },
+        "nightVision": {
+            "xbsjType": "NightVisionStage",
+            "xbsjGuid": "efadbd4e-1f5c-4fd8-a141-7c9a1472d380"
+        },
+        "silhouette": {
+            "xbsjType": "XbsSilhouetteStage",
+            "xbsjGuid": "a0b2dcaa-4d21-4347-8291-625e0ec2f52d"
+        }
+    },
+    "effect": {
+        "xbsjType": "Effect",
+        "xbsjGuid": "0c2f7019-0cb3-4e05-97e7-c425d3311d18",
+        "shadow": {
+            "xbsjType": "Shadow",
+            "xbsjGuid": "fc3cb8c2-1216-474a-b67a-7f079f2a69df"
+        },
+        "forceSunPos": {
+            "position": [
+                2.0245819323134224,
+                0.6981317007977318,
+                10000000
+            ]
+        }
+    },
+    "camera": {},
+    "interaction": {
+        "picking": {}
+    }
+}

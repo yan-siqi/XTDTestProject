@@ -31,6 +31,7 @@
 
 <script>
 import surfaceJson from "../../../.././../../public/surface.json";
+import surfaceAirJson from "../../../../../../public/surfaceAir.json"
 export default {
   name: "surfacecom",
   data() {
@@ -46,20 +47,23 @@ export default {
       // 初始化地表
       let that = this;
       this.timmer = setTimeout(function() {
-          that.$parent.$parent._earth.sceneTree.root.children.push(surfaceJson);
-          let curEarth = that.$parent.$parent._earth;
-          console.log(curEarth.sceneTree.$refs.model1.czmObject,'当前飞机模型');
-          curEarth.sceneTree.$refs.model1.czmObject.flyTo();
-        curEarth.camera.position = [
-          1.9017020682146637,
-          0.5972460779975362,
-          444.77,
-        ];
-        curEarth.camera.rotation = [
-          3.1610812679605633,
-          -0.35387649068319726,
-          6.283128281412125,
-        ];
+        // that.$parent.$parent._earth.sceneTree.root.children.push(surfaceJson);
+        surfaceAirJson.sceneTree.root.children.forEach(item=>{
+          that.$parent.$parent._earth.sceneTree.root.children.push(item);// 加载最新的地形数据
+        })
+        console.log(that.$parent.$parent._earth.sceneTree.$refs.yw1.children[0].czmObject);
+        that.$parent.$parent._earth.sceneTree.$refs.yw1.children[0].czmObject.flyTo()
+        let curEarth = that.$parent.$parent._earth;
+        // curEarth.camera.position = [
+        //   1.9016955155927044,
+        //   0.5972450395348012,
+        //   428.1730120425715,
+        // ];
+        // curEarth.camera.rotation = [
+        //   3.1610812679605633,
+        //   -0.35387649068319726,
+        //   6.283128281412125,
+        // ];
         {
           that._disposers = [];
           that._disposers.push(
@@ -97,6 +101,8 @@ export default {
     },
   },
   mounted() {
+    // 将当前地球上数据清除
+    this.$parent.$parent._earth.sceneTree.root.children = []
     this.initSurface(); // 初始化地表数据
   },
   beforeDestroy() {
