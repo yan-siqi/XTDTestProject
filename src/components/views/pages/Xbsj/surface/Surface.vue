@@ -103,7 +103,7 @@ export default {
   mounted() {
     // 将当前地球上数据清除
     this.$parent.$parent._earth.sceneTree.root.children = []
-    this.initSurface(); // 初始化地表数据
+    //this.initSurface(); // 初始化地表数据
   },
   beforeDestroy() {
     // vue程序销毁时，需要清理相关资源

@@ -37,7 +37,12 @@
           <Surface />
         </div>
       </li>
-      <li></li>
+      <li @click="curItemClick('dantihua')">
+        测试单体化+编辑
+        <div v-if="isDantihua">
+          <Dantihua />
+        </div>
+      </li>
     </ul>
   </div>
 </template>
@@ -48,7 +53,8 @@ import VideoConnect from "./sprh/VideoConnect.vue";
 import Mapvjiqun from "./mapv-jiqun/Mapvjiqun.vue";
 import HeatMap from "./heatmap/HeatMap.vue";
 import Vision from "./vision/vision.vue";
-import Surface from "./surface/Surface.vue"
+import Surface from "./surface/Surface.vue";
+import Dantihua from "./dantihua/Dantihua.vue";
 export default {
   name: "xbsjtestcom",
   components: {
@@ -57,7 +63,8 @@ export default {
     Mapvjiqun,
     HeatMap,
     Vision,
-    Surface
+    Surface,
+    Dantihua,
   },
   data() {
     return {
@@ -67,6 +74,7 @@ export default {
       isheatmap: false, // 热力图
       isVision: false, // 视域
       isSurface: false, // 展示地下模式和地表不透明
+      isDantihua: false, // 展示单体化
     };
   },
   methods: {
@@ -79,6 +87,7 @@ export default {
           this.isheatmap = false;
           this.isVision = false;
           this.isSurface = false;
+          this.isDantihua = false;
           break;
         case "sprh":
           this.isVideoConnect = true;
@@ -87,6 +96,7 @@ export default {
           this.isheatmap = false;
           this.isVision = false;
           this.isSurface = false;
+          this.isDantihua = false;
           break;
         case "mapjq":
           this.isJq = true;
@@ -95,6 +105,7 @@ export default {
           this.isheatmap = false;
           this.isVision = false;
           this.isSurface = false;
+          this.isDantihua = false;
           break;
         case "mapvrlt":
           this.isVideoConnect = false;
@@ -103,6 +114,7 @@ export default {
           this.isheatmap = true;
           this.isVision = false;
           this.isSurface = false;
+          this.isDantihua = false;
           break;
         case "sy":
           this.isVision = true;
@@ -119,6 +131,47 @@ export default {
           this.isJq = false;
           this.isheatmap = false;
           this.isSurface = true;
+          this.isDantihua = false;
+          break;
+        case "dantihua":
+          this.isVision = false;
+          this.isVideoConnect = false;
+          this.isManyou = false;
+          this.isJq = false;
+          this.isheatmap = false;
+          this.isSurface = false;
+          this.isDantihua = true;
+          var curEarth = this.$parent._earth;
+          //本质是创建的多边形
+          var classificationpolygon = new XE.Obj.ClassificationPolygon(
+            curEarth
+          );
+          // 相机所处位置
+          curEarth.camera.position = [
+            1.9016991633909208,
+            0.5971695799282292,
+            756.7010439120457,
+          ];
+          // 多边形的旋转角
+          curEarth.camera.rotation = [
+            0.027900493226680645,
+            -0.6716444402205366,
+            0.00011144258520534578,
+          ];
+          // 多边形的所处位置
+          classificationpolygon.positions = [
+            1.901696187121785,
+            0.5972449008742788,
+            1.9017061471418992,
+            0.5972447321375927,
+            1.9017067914212735,
+            0.5972580482997942,
+            1.9016939145423322,
+            0.5972563596224854,
+          ];
+          // 多边形的高度
+          classificationpolygon.height = 511.3415929293872;
+          window.classificationpolygon = classificationpolygon;
           break;
         default:
           break;

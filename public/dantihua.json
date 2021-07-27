@@ -1,0 +1,34 @@
+{
+    "title": "当前场景",
+    "isSelected": true,
+    "children": [
+        {
+            "czmObject": {
+                "xbsjType": "Imagery",
+                "enabled": true,
+                "name": "谷歌影像",
+                "show": true,
+                "xbsjImageryProvider": {
+                    "XbsjImageryProvider": {
+                        "url": "//www.google.cn/maps/vt?lyrs=s&x={x}&y={y}&z={z}"
+                    }
+                }
+            }
+        },
+        {
+            "czmObject": {
+                "name": "大雁塔",
+                "xbsjType": "Tileset",
+                "url": "../assets/dayanta/tileset.json",
+                "xbsjPosition": [
+                    1.9016974701882112,
+                    0.5972325152147303,
+                    425.8641913624607
+                ],
+                "xbsjUseOriginTransform": false,
+                "skipLevelOfDetail": false
+            },
+            "ref": "dantihua"
+        }
+    ]
+}
