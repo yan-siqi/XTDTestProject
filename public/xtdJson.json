@@ -1,0 +1,852 @@
+{
+    "sceneTree": {
+        "root": {
+            "children": [
+                {
+                    "title": "基础图层",
+                    "ref": "jctc",
+                    "expand": false,
+                    "children": [
+                        {
+                            "title": "影像",
+                            "ref": "yx",
+                            "expand": false,
+                            "children": [
+                                {
+                                    "ref": "qq",
+                                    "czmObject": {
+                                        "xbsjType": "Imagery",
+                                        "xbsjGuid": "8ab1607c-43a7-49c4-805a-3b6a2e4d7c23",
+                                        "name": "全球",
+                                        "rectangle": [
+                                            -3.141592653589793,
+                                            -1.5707963267948966,
+                                            3.141592653589793,
+                                            1.5707963267948966
+                                        ],
+                                        "xbsjImageryProvider": {
+                                            "XbsjImageryProvider": {},
+                                            "UrlTemplateImageryProvider": {},
+                                            "WebMapServiceImageryProvider": {},
+                                            "WebMapTileServiceImageryProvider": {
+                                                "url": "http://192.168.0.224:9090/geowebcache/service/wmts/rest/world_image/{style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}?format=image/png",
+                                                "format": "image/png",
+                                                "layer": "world_image",
+                                                "style": "[object Object]",
+                                                "tileMatrixSetID": "EPSG:4326_world_image",
+                                                "tileMatrixLabels": [
+                                                    "EPSG:4326_world_image:1",
+                                                    "EPSG:4326_world_image:2",
+                                                    "EPSG:4326_world_image:3",
+                                                    "EPSG:4326_world_image:4",
+                                                    "EPSG:4326_world_image:5",
+                                                    "EPSG:4326_world_image:6",
+                                                    "EPSG:4326_world_image:7",
+                                                    "EPSG:4326_world_image:8"
+                                                ],
+                                                "tilingScheme": "Geographic",
+                                                "maximumLevel": 7
+                                            },
+                                            "ArcGisMapServerImageryProvider": {},
+                                            "createTileMapServiceImageryProvider": {},
+                                            "type": "WebMapTileServiceImageryProvider"
+                                        }
+                                    }
+                                },
+                                {
+                                    "ref": "bj",
+                                    "czmObject": {
+                                        "xbsjType": "Imagery",
+                                        "xbsjGuid": "46dc94db-5165-43d0-9819-8278c7c971e5",
+                                        "name": "北京",
+                                        "rectangle": [
+                                            2.0144041356824007,
+                                            0.6883833591808336,
+                                            2.050903836155496,
+                                            0.7166187990692222
+                                        ],
+                                        "xbsjImageryProvider": {
+                                            "XbsjImageryProvider": {},
+                                            "UrlTemplateImageryProvider": {},
+                                            "WebMapServiceImageryProvider": {},
+                                            "WebMapTileServiceImageryProvider": {
+                                                "url": "http://192.168.0.224:9090/geowebcache/service/wmts/rest/beijing_image/{style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}?format=image/png",
+                                                "format": "image/png",
+                                                "layer": "beijing_image",
+                                                "style": "[object Object]",
+                                                "tileMatrixSetID": "EPSG:4326_beijing_image",
+                                                "tileMatrixLabels": [
+                                                    "EPSG:4326_beijing_image:1",
+                                                    "EPSG:4326_beijing_image:2",
+                                                    "EPSG:4326_beijing_image:3",
+                                                    "EPSG:4326_beijing_image:4",
+                                                    "EPSG:4326_beijing_image:5",
+                                                    "EPSG:4326_beijing_image:6",
+                                                    "EPSG:4326_beijing_image:7",
+                                                    "EPSG:4326_beijing_image:8",
+                                                    "EPSG:4326_beijing_image:9",
+                                                    "EPSG:4326_beijing_image:10",
+                                                    "EPSG:4326_beijing_image:11",
+                                                    "EPSG:4326_beijing_image:12",
+                                                    "EPSG:4326_beijing_image:13",
+                                                    "EPSG:4326_beijing_image:14",
+                                                    "EPSG:4326_beijing_image:15",
+                                                    "EPSG:4326_beijing_image:16",
+                                                    "EPSG:4326_beijing_image:17",
+                                                    "EPSG:4326_beijing_image:18"
+                                                ],
+                                                "tilingScheme": "Geographic",
+                                                "maximumLevel": 17
+                                            },
+                                            "ArcGisMapServerImageryProvider": {},
+                                            "createTileMapServiceImageryProvider": {},
+                                            "type": "WebMapTileServiceImageryProvider"
+                                        },
+                                        "xbsjZIndex": 1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "title": "倾斜",
+                            "ref": "qx",
+                            "expand": false,
+                            "children": [
+                                {
+                                    "ref": "ggqx",
+                                    "czmObject": {
+                                        "xbsjType": "Tileset",
+                                        "xbsjGuid": "fb311f20-0262-486b-8685-f0beb234e43c",
+                                        "name": "故宫倾斜",
+                                        "url": "http://192.168.0.224:9091/changanjie/bj/05modify/tileset.json",
+                                        "xbsjPosition": [
+                                            2.0314219249015735,
+                                            0.6965121672722885,
+                                            7.901083462006397
+                                        ],
+                                        "xbsjUseOriginTransform": false,
+                                        "xbsjClippingPlanes": {},
+                                        "xbsjCustomShader": {}
+                                    }
+                                },
+                                {
+                                    "ref": "cajqx",
+                                    "czmObject": {
+                                        "xbsjType": "Tileset",
+                                        "xbsjGuid": "21802a66-16eb-480c-b39a-a518fac5bdef",
+                                        "name": "长安街倾斜",
+                                        "url": "http://192.168.0.224:9091/changanjie/bj/06modify/tileset.json",
+                                        "xbsjPosition": [
+                                            2.031421956447429,
+                                            0.6965120076042469,
+                                            7.9
+                                        ],
+                                        "xbsjUseOriginTransform": false,
+                                        "xbsjClippingPlanes": {},
+                                        "xbsjCustomShader": {}
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "title": "高程",
+                            "ref": "gc",
+                            "expand": false,
+                            "children": [
+                                {
+                                    "ref": "gc",
+                                    "czmObject": {
+                                        "xbsjType": "Terrain",
+                                        "xbsjGuid": "2b5f912b-78f1-417f-8652-64e62bf05b45",
+                                        "name": "北京高程",
+                                        "xbsjTerrainProvider": {
+                                            "type": "XbsjCesiumTerrainProvider",
+                                            "XbsjEllipsoidTerrainProvider": {},
+                                            "XbsjCesiumTerrainProvider": {
+                                                "url": "http://192.168.0.224:9091/beijing/dem/bjgaocheng",
+                                                "requestVertexNormals": true,
+                                                "requestWaterMask": true
+                                            },
+                                            "GoogleEarthEnterpriseTerrainProvider": {}
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "事件图层",
+                    "ref": "sjtc",
+                    "children": []
+                },
+                {
+                    "title": "业务图层",
+                    "ref": "ywtc",
+                    "expand": false,
+                    "children": [
+                        {
+                            "ref": "path1",
+                            "czmObject": {
+                                "xbsjType": "Path",
+                                "positions": [
+                                    [
+                                        1.901680132420559,
+                                        0.5972182908445829,
+                                        433.0683171316799
+                                    ],
+                                    [
+                                        1.9016955279727528,
+                                        0.5972181452778111,
+                                        423.12350415411714
+                                    ],
+                                    [
+                                        1.9017145828580002,
+                                        0.5972208009081579,
+                                        425.4850832912241
+                                    ],
+                                    [
+                                        1.9017262789547222,
+                                        0.5972351096523284,
+                                        422.8497499192048
+                                    ],
+                                    [
+                                        1.901727649590904,
+                                        0.5972528175704416,
+                                        430.28505722755125
+                                    ],
+                                    [
+                                        1.9017257110942418,
+                                        0.5972725123064561,
+                                        424.4079951073853
+                                    ],
+                                    [
+                                        1.9017036577863207,
+                                        0.5972724396334318,
+                                        424.7490241854184
+                                    ],
+                                    [
+                                        1.901686600965538,
+                                        0.5972705593917232,
+                                        427.02149479702354
+                                    ],
+                                    [
+                                        1.9016766994617944,
+                                        0.5972603070896778,
+                                        431.7015124084112
+                                    ]
+                                ],
+                                "rotations": [
+                                    [
+                                        0.09013100029970911,
+                                        -0.18377735899612802,
+                                        0.003054530379764664
+                                    ],
+                                    [
+                                        6.2774807418185326,
+                                        -0.027139787365685564,
+                                        0.003118310344536468
+                                    ],
+                                    [
+                                        5.661660276351502,
+                                        -0.021720571300320346,
+                                        0.002535544669053813
+                                    ],
+                                    [
+                                        4.981394998665019,
+                                        0.05285693534942659,
+                                        0.0008279383261120543
+                                    ],
+                                    [
+                                        4.8175908508971865,
+                                        -0.01246899314535077,
+                                        0.0003275578935015844
+                                    ],
+                                    [
+                                        3.5587596233006114,
+                                        -0.02089253969273508,
+                                        6.28033382242212
+                                    ],
+                                    [
+                                        3.1760456928764027,
+                                        0.0119204105288373,
+                                        6.280067735240507
+                                    ],
+                                    [
+                                        2.6119489784580585,
+                                        0.04429838944262987,
+                                        6.280495736703571
+                                    ],
+                                    [
+                                        1.96205879990623,
+                                        0.059989205852726935,
+                                        6.28199776080986
+                                    ]
+                                ],
+                                "show": true,
+                                "loop": false,
+                                "showDirection": true,
+                                "playing": false,
+                                "loopPlay": false,
+                                "alwaysAlongThePath": true
+                            }
+                        },
+                        {
+                            "ref": "model1",
+                            "czmObject": {
+                                "xbsjType": "Model",
+                                "xbsjGuid": "74931a66-592c-46c4-bbf0-3ef57fc8b8fa",
+                                "name": "汽车",
+                                "url": "./assets/gongjiao.glb",
+                                "distanceDisplayCondition": [
+                                    0,
+                                    5000
+                                ],
+                                "color": [
+                                    1,
+                                    0.09803921568627451,
+                                    0,
+                                    1
+                                ],
+                                "silhouetteColor": [
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "xbsjPosition": [
+                                    2.031423401292805,
+                                    0.6964930701578291,
+                                    53.546932761336485
+                                ]
+                            }
+                        },
+                        {
+                            "ref": "dqfj",
+                            "czmObject": {
+                                "xbsjType": "Model",
+                                "xbsjGuid": "0fbb1465-94eb-4627-8d91-d8f33e7962ea",
+                                "name": "当前飞机",
+                                "url": "./assets/feiji.glb",
+                                "distanceDisplayCondition": [
+                                    0,
+                                    5000
+                                ],
+                                "color": [
+                                    0.5568627450980392,
+                                    0,
+                                    0.6549019607843137,
+                                    1
+                                ],
+                                "silhouetteColor": [
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "xbsjPosition": [
+                                    2.027326504289886,
+                                    0.69571654439984,
+                                    89.15135912148965
+                                ],
+                                "xbsjRotation": [
+                                    -2.696138284193638,
+                                    -0.004473218001879295,
+                                    -0.0020627813668371285
+                                ],
+                                "attachedPathGuid": "0b643da0-5675-4762-982b-0937b317bfd4"
+                            }
+                        },
+                        {
+                            "czmObject": {
+                                "xbsjType": "Model",
+                                "xbsjGuid": "ec77284c-7619-44d4-a682-b59030ca1e10",
+                                "name": "模型",
+                                "distanceDisplayCondition": [
+                                    0,
+                                    5000
+                                ],
+                                "color": [
+                                    0.35294117647058826,
+                                    0,
+                                    1,
+                                    1
+                                ],
+                                "silhouetteColor": [
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "xbsjPosition": [
+                                    2.027284734814789,
+                                    0.6957230608674575,
+                                    105.97575230476968
+                                ]
+                            }
+                        },
+                        {
+                            "ref": "syfx",
+                            "czmObject": {
+                                "xbsjType": "Path",
+                                "xbsjGuid": "8a8d6708-79ee-4dc5-bd77-71da3f578252",
+                                "name": "视域分析路径",
+                                "positions": [
+                                    [
+                                        2.0311181340037052,
+                                        0.696800575033034,
+                                        65.36553410367783
+                                    ],
+                                    [
+                                        2.031546156797919,
+                                        0.69683567517844,
+                                        66.8796148305249
+                                    ],
+                                    [
+                                        2.0315554470177766,
+                                        0.696826542979332,
+                                        72.88813024242936
+                                    ],
+                                    [
+                                        2.031538393062398,
+                                        0.6965158057032099,
+                                        51.048618693780426
+                                    ],
+                                    [
+                                        2.0312009596075438,
+                                        0.6964862985809356,
+                                        51.99517837140572
+                                    ],
+                                    [
+                                        2.031114672053281,
+                                        0.6968004161569585,
+                                        64.14836168031917
+                                    ]
+                                ],
+                                "rotations": [
+                                    [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                ],
+                                "loop": true,
+                                "playing": true,
+                                "showDirection": false,
+                                "show": false
+                            }
+                        },
+                        {
+                            "ref": "viewshed",
+                            "czmObject": {
+                                "xbsjType": "Viewshed",
+                                "name": "视域分析1",
+                                "position": [
+                                    2.0314139084786236,
+                                    0.6965029141612101,
+                                    50.65
+                                ],
+                                "rotation": [
+                                    6.237806746627734,
+                                    0.0017453292519943296,
+                                    6.283185307179586
+                                ],
+                                "near": 200,
+                                "far": 3000
+                            }
+                        },
+                        {
+                            "ref": "syfx1",
+                            "czmObject": {
+                                "xbsjType": "Path",
+                                "xbsjGuid": "e8255b66-eb4c-475c-bd51-80e9f0a335a7",
+                                "name": "视域分析",
+                                "positions": [
+                                    [
+                                        2.0309834368785866,
+                                        0.6969404320187123,
+                                        59.3505739783044
+                                    ],
+                                    [
+                                        2.031595652042948,
+                                        0.6969496956158461,
+                                        61.588389245601135
+                                    ],
+                                    [
+                                        2.031686636426633,
+                                        0.6969227773413122,
+                                        55.44553355605563
+                                    ],
+                                    [
+                                        2.0316805329080685,
+                                        0.6967334917324628,
+                                        57.846733973991675
+                                    ],
+                                    [
+                                        2.0316184292979385,
+                                        0.696421270033018,
+                                        50.752907563734965
+                                    ],
+                                    [
+                                        2.030981456718745,
+                                        0.6963850416325811,
+                                        59.03029685996818
+                                    ],
+                                    [
+                                        2.0309810100455676,
+                                        0.6969431861711002,
+                                        59.45193473533671
+                                    ]
+                                ],
+                                "alwaysAlongThePath": false
+                            }
+                        },
+                        {
+                            "ref": "path11",
+                            "czmObject": {
+                                "xbsjType": "Path",
+                                "positions": [
+                                    [
+                                        1.9016746584889261,
+                                        0.5972140444354529,
+                                        540.3422462577171
+                                    ],
+                                    [
+                                        1.9017267341518718,
+                                        0.5972133503414322,
+                                        520.1137699152557
+                                    ],
+                                    [
+                                        1.9017257997179968,
+                                        0.5972736030398242,
+                                        528.3876170108886
+                                    ],
+                                    [
+                                        1.9016747349263112,
+                                        0.5972754003153069,
+                                        521.087861389408
+                                    ]
+                                ],
+                                "rotations": [
+                                    [
+                                        6.868275118748086,
+                                        -0.2742692911775144,
+                                        0.0016584301080495578
+                                    ],
+                                    [
+                                        5.703866308921896,
+                                        -0.19385405041989068,
+                                        6.281509509407803
+                                    ],
+                                    [
+                                        3.8005195675504133,
+                                        -0.2597408290639396,
+                                        6.281339310424716
+                                    ],
+                                    [
+                                        2.501667530825695,
+                                        -0.2173829253288364,
+                                        0.001819016773946025
+                                    ]
+                                ],
+                                "show": false,
+                                "loop": true,
+                                "showDirection": false,
+                                "loopPlay": true,
+                                "cameraAttached": true
+                            }
+                        },
+                        {
+                            "ref": "ljdh",
+                            "czmObject": {
+                                "xbsjType": "Path",
+                                "xbsjGuid": "0b643da0-5675-4762-982b-0937b317bfd4",
+                                "name": "当前飞机路径动画",
+                                "positions": [
+                                    [
+                                        2.027340485420785,
+                                        0.6956995362514234,
+                                        90.3558312404461
+                                    ],
+                                    [
+                                        2.027320514743674,
+                                        0.6957201564032217,
+                                        88.88247816920567
+                                    ],
+                                    [
+                                        2.0272797173943635,
+                                        0.6957240956000914,
+                                        88.44046711871032
+                                    ],
+                                    [
+                                        2.0272954171528896,
+                                        0.6957396671060522,
+                                        87.4570253788267
+                                    ],
+                                    [
+                                        2.027358495100926,
+                                        0.6957171136902169,
+                                        89.25881007357877
+                                    ],
+                                    [
+                                        2.0273299411463914,
+                                        0.6956924736272179,
+                                        90.79020338987993
+                                    ],
+                                    [
+                                        2.0273017370744224,
+                                        0.6957038005750424,
+                                        89.90861726094168
+                                    ],
+                                    [
+                                        2.0272977364890394,
+                                        0.6957148616104047,
+                                        89.14151565979624
+                                    ]
+                                ],
+                                "rotations": [
+                                    [
+                                        5.918703806539547,
+                                        -0.010194537200414189,
+                                        6.282008124229467
+                                    ],
+                                    [
+                                        4.9106078439911265,
+                                        -0.0029516432249685476,
+                                        6.279947421449531
+                                    ],
+                                    [
+                                        6.504440562633292,
+                                        -0.01016336125081696,
+                                        0.0007247292354071178
+                                    ],
+                                    [
+                                        7.5001342064117775,
+                                        -0.0028433143279482653,
+                                        0.003097972845404584
+                                    ],
+                                    [
+                                        3.4235717028799915,
+                                        0.009893691701271301,
+                                        6.282266387352486
+                                    ],
+                                    [
+                                        4.741816857881263,
+                                        -0.0011572795793883817,
+                                        6.279884205687424
+                                    ],
+                                    [
+                                        5.757825553688825,
+                                        -0.009642411292077657,
+                                        6.281529071978106
+                                    ],
+                                    [
+                                        6.219835469617715,
+                                        -0.010703258250303715,
+                                        6.28297624161269
+                                    ]
+                                ],
+                                "showDirection": true
+                            }
+                        },
+                        {
+                            "ref": "tbd",
+                            "czmObject": {
+                                "xbsjType": "Pin",
+                                "xbsjGuid": "e00734d5-fac0-44cb-9611-63b88374ba37",
+                                "name": "图标点",
+                                "position": [
+                                    2.027326504289886,
+                                    0.69571654439984,
+                                    89.15135912148965
+                                ],
+                                "pinBuilder": {},
+                                "iframe": {},
+                                "far": 1073741824,
+                                "attachedPathGuid": "0b643da0-5675-4762-982b-0937b317bfd4"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "cameraViewManager": {
+        "globe": {
+            "position": [
+                2.1031217486531677,
+                0.5042461979915104,
+                22191651.019924622
+            ],
+            "rotation": [
+                0,
+                -1.5704894508531937,
+                0
+            ],
+            "near": 0.1,
+            "far": 10000000000
+        },
+        "china": {
+            "position": [
+                1.8770894704964525,
+                0.662547523843314,
+                8511735.797037361
+            ],
+            "rotation": [
+                0,
+                -1.5701114159178209,
+                0
+            ],
+            "near": 0.1,
+            "far": 10000000000
+        },
+        "lastView": {
+            "position": [
+                2.0273230013234906,
+                0.6957624331093022,
+                358.0073533609795
+            ],
+            "rotation": [
+                3.1400404853995894,
+                -0.7944410597265863,
+                0.000007353234153129051
+            ],
+            "fov": 1.0471975511965976,
+            "near": 0.1,
+            "far": 10000000000
+        }
+    },
+    "cameraFlight": {
+        "xbsjType": "CameraFlight",
+        "xbsjGuid": "ac8ae4ef-e5b7-4e4b-b16a-21a026a8c0e9",
+        "rotateGlobe": {
+            "xbsjType": "RotateGlobe",
+            "xbsjGuid": "daf7f1c1-ebf6-422c-9e32-8fb4d1f87ab3",
+            "latitude": 0.6632251157578453
+        },
+        "rotateCenter": {
+            "xbsjType": "RotateCenter",
+            "xbsjGuid": "16da2e4d-cdae-4b78-9d12-9b5f3bb2400b",
+            "pitch": -0.5235987755982988
+        },
+        "track": {
+            "xbsjType": "CameraTrack",
+            "xbsjGuid": "bcdc7301-c2fb-4053-8dbc-eccb592dfe84"
+        }
+    },
+    "weather": {
+        "fog": {},
+        "sun": {},
+        "skyBox": {},
+        "moon": {},
+        "rain": {},
+        "snow": {},
+        "cloud": {},
+        "atmosphere": {},
+        "rainPostProcess": {},
+        "snowPostProcess": {},
+        "fogPostProcess": {}
+    },
+    "terrainEffect": {
+        "elevation": {
+            "xbsjType": "ElevationRamp",
+            "xbsjGuid": "b4bc69b4-2ee0-4087-b027-a54d8b00370c"
+        },
+        "slope": {
+            "xbsjType": "SlopeRamp",
+            "xbsjGuid": "8758b2b6-dfe6-4b2c-8f3c-283b06dd8abf"
+        },
+        "aspect": {
+            "xbsjType": "AspectRamp",
+            "xbsjGuid": "5f5e2475-4e14-4032-bef0-1ed57f2c838e"
+        },
+        "contour": {},
+        "restrict": {},
+        "surfaceOpacity": 1,
+        "globeTranslucency": {}
+    },
+    "postProcess": {
+        "xbsjType": "PostProcess",
+        "xbsjGuid": "2ba98c41-c99b-4344-892e-81b2d5ca93a5",
+        "ambientOcclusion": {
+            "xbsjType": "AmbientOcclusionStage",
+            "xbsjGuid": "c19cd616-a075-4271-a86e-b3919cf1d574"
+        },
+        "bloom": {
+            "xbsjType": "BloomStage",
+            "xbsjGuid": "24fdbf55-64db-49b5-ba99-6b7a57e7387a"
+        },
+        "blackAndWhite": {
+            "xbsjType": "BlackAndWhiteStage",
+            "xbsjGuid": "f598e650-ea17-4559-8f86-3bdbdc83dc97"
+        },
+        "brightness": {
+            "xbsjType": "BrightnessStage",
+            "xbsjGuid": "54689d3d-e879-492b-baf7-79d947c80888"
+        },
+        "depthOfField": {
+            "xbsjType": "DepthOfFieldStage",
+            "xbsjGuid": "5ec72e2f-857f-4638-9247-79d7e33c2bbd"
+        },
+        "lensFlare": {
+            "xbsjType": "LensFlareStage",
+            "xbsjGuid": "da897263-1985-4cf6-9a20-36fb3ac0e7f7"
+        },
+        "mosaic": {
+            "xbsjType": "MosaicStage",
+            "xbsjGuid": "4f7976c8-cb49-4d7a-a507-4a25ca37e08f"
+        },
+        "nightVision": {
+            "xbsjType": "NightVisionStage",
+            "xbsjGuid": "c6c6797b-8224-44ed-817f-2e86f8605025"
+        },
+        "silhouette": {
+            "xbsjType": "XbsSilhouetteStage",
+            "xbsjGuid": "c6031f75-9caa-47e8-a571-07a972211b6a"
+        }
+    },
+    "effect": {
+        "xbsjType": "Effect",
+        "xbsjGuid": "a63050f3-c1d5-4753-8901-3ab99dbbe305",
+        "shadow": {
+            "xbsjType": "Shadow",
+            "xbsjGuid": "02c0c336-8f96-48b6-bce6-483b5a420e07"
+        },
+        "forceSunPos": {
+            "position": [
+                2.0245819323134224,
+                0.6981317007977318,
+                10000000
+            ]
+        }
+    },
+    "camera": {},
+    "interaction": {
+        "picking": {}
+    }
+}

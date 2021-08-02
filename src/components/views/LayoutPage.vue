@@ -23,6 +23,7 @@
 <script>
 import earthGlobal from "@/global/earth/earthutils.js";
 import Json from "../../../public/scene.json";
+import XTDJSON from "../../../public/xtdJson.json";
 import HeaderView from "../../components/appCom/HeaderContent";
 export default {
   name: "App",
@@ -30,16 +31,17 @@ export default {
   data() {
     return {};
   },
-  methods: {
-  },
+  methods: {},
   mounted() {
     var earth = new XE.Earth(this.$refs.earthContainer);
     earthGlobal.earthcesium.earth = earth;
     earthGlobal.earthmaptool.setearth(earthGlobal.earthcesium);
     this._earth = earth;
-    this._earth.xbsjFromJSON(Json);// 展示当前影像json
+    this._earth.xbsjFromJSON(Json); // 展示当前影像json
+    //this._earth.xbsjFromJSON(XTDJSON); // 测试模型的平移旋转
+
     window.earth = earth;
-    earth.camera.flyTo([116.41, 39.929, 10000].xeptr);
+    //  / earth.camera.flyTo([2.0273210056641258, 0.6957050387098255, 1000]);
   },
   beforeDestroy() {
     window.earth.removeAll();
@@ -71,6 +73,7 @@ html {
   box-sizing: border-box;
   font-family: "微软雅黑";
   list-style: none;
+  // pointer-events: none;
   .mapdiv {
     position: absolute;
     left: 0;

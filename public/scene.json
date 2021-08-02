@@ -10,6 +10,7 @@
                         {
                             "title": "影像",
                             "ref": "yx",
+                            "expand": false,
                             "children": [
                                 {
                                     "ref": "qq",
@@ -54,6 +55,7 @@
                         {
                             "title": "倾斜",
                             "ref": "qx",
+                            "expand": false,
                             "children": [
                                 {
                                     "czmObject": {
@@ -64,7 +66,7 @@
                                         "xbsjPosition": [
                                             1.9017002809975097,
                                             0.5972446887154512,
-                                            3.0624089850964736e-9
+                                            7.8
                                         ],
                                         "xbsjUseOriginTransform": false,
                                         "xbsjClippingPlanes": {},
@@ -101,12 +103,44 @@
                 {
                     "title": "业务图层",
                     "ref": "ywtc",
+                    "expand": false,
                     "children": []
                 },
                 {
                     "title": "事件图层",
                     "ref": "sjtc",
                     "children": []
+                },
+                {
+                    "ref": "model1",
+                    "czmObject": {
+                        "xbsjType": "Model",
+                        "xbsjGuid": "b81693d1-1b60-4b13-bf77-91864bfa8db1",
+                        "name": "汽车",
+                        "url": "./assets/gongjiao.glb",
+                        "distanceDisplayCondition": [
+                            0,
+                            5000
+                        ],
+                        "color": [
+                            1,
+                            0.09803921568627451,
+                            0,
+                            1
+                        ],
+                        "silhouetteColor": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "luminanceAtZenith": 0.28,
+                        "xbsjPosition": [
+                            1.9017000290056187,
+                            0.5972157875530469,
+                            429.8448075340574
+                        ]
+                    }
                 }
             ]
         }
@@ -142,14 +176,14 @@
         },
         "lastView": {
             "position": [
-                1.9016954032665068,
-                0.5972297418403396,
-                468.5228990897914
+                1.9017006212472183,
+                0.5972013848193936,
+                500.90747236771574
             ],
             "rotation": [
-                0.0750462912299259,
-                -0.36760548652816083,
-                0.00025093632947204014
+                6.248454676374913,
+                -0.5446830312747211,
+                6.2830584229236734
             ],
             "fov": 1.0471975511965976,
             "near": 0.1,
@@ -158,20 +192,20 @@
     },
     "cameraFlight": {
         "xbsjType": "CameraFlight",
-        "xbsjGuid": "b05dc350-f2dc-4e22-b6a1-b644b55e51c3",
+        "xbsjGuid": "97a3fe6c-04b9-4312-a4f0-c0eb41867a7f",
         "rotateGlobe": {
             "xbsjType": "RotateGlobe",
-            "xbsjGuid": "e8cbe55e-1f9b-43ac-9282-9a17a23c9905",
+            "xbsjGuid": "fc7863c2-1710-402c-bbcb-44bcf3f6db1a",
             "latitude": 0.6632251157578453
         },
         "rotateCenter": {
             "xbsjType": "RotateCenter",
-            "xbsjGuid": "fd2f1349-ec02-427b-9b07-cdfc8db47e75",
+            "xbsjGuid": "e07d289b-969b-4b45-a26a-ca47aef2f3b0",
             "pitch": -0.5235987755982988
         },
         "track": {
             "xbsjType": "CameraTrack",
-            "xbsjGuid": "81f9eb1a-1bc8-4295-954c-8bafcd94a18a"
+            "xbsjGuid": "c2e71c30-8752-42e4-ac3d-484ddf41ac7e"
         }
     },
     "weather": {
@@ -190,68 +224,68 @@
     "terrainEffect": {
         "elevation": {
             "xbsjType": "ElevationRamp",
-            "xbsjGuid": "eb6a0cbd-c860-4309-b6c5-ce14fc5c405b"
+            "xbsjGuid": "5a1d6c1a-da4a-4a66-906a-0600d884f0cd"
         },
         "slope": {
             "xbsjType": "SlopeRamp",
-            "xbsjGuid": "a2bf671d-59bf-4629-a6e2-075971d85beb"
+            "xbsjGuid": "73477d4c-25b4-4bf1-80d6-216484f6c55b"
         },
         "aspect": {
             "xbsjType": "AspectRamp",
-            "xbsjGuid": "57f788c7-3275-4903-a02c-d73576ac0b11"
+            "xbsjGuid": "c8aa6ad8-5d63-4ab2-99e8-6ad20ac1d2d6"
         },
         "contour": {},
         "restrict": {},
         "subSurfaceEnabled": true,
-        "surfaceOpacity": 0.8,
+        "surfaceOpacity": 1,
         "globeTranslucency": {}
     },
     "postProcess": {
         "xbsjType": "PostProcess",
-        "xbsjGuid": "d7029ca4-08a2-43ea-a37c-e38a733b9ee9",
+        "xbsjGuid": "d9ed9e42-6ea7-4d19-8641-b10cdc1d769b",
         "ambientOcclusion": {
             "xbsjType": "AmbientOcclusionStage",
-            "xbsjGuid": "f1ebdbe3-3ba5-457d-b623-fc82700f0080"
+            "xbsjGuid": "8c9d718f-7d8f-4421-ad35-0fdc611b51ac"
         },
         "bloom": {
             "xbsjType": "BloomStage",
-            "xbsjGuid": "2e44035e-07fa-4508-9786-ef527fbba028"
+            "xbsjGuid": "fc45429a-a428-4d25-b067-36ff27140868"
         },
         "blackAndWhite": {
             "xbsjType": "BlackAndWhiteStage",
-            "xbsjGuid": "e007e64f-ecfc-4e04-a039-1caddc8c549a"
+            "xbsjGuid": "ecbfd73b-4b08-48b4-8ae6-288c1bc6d890"
         },
         "brightness": {
             "xbsjType": "BrightnessStage",
-            "xbsjGuid": "a42fedb9-9820-4f94-a413-b960978a8c3f"
+            "xbsjGuid": "d7f5d072-9b8f-4f61-9628-f456d962e2de"
         },
         "depthOfField": {
             "xbsjType": "DepthOfFieldStage",
-            "xbsjGuid": "11d423be-34e7-4ccc-842d-c4dace95a40b"
+            "xbsjGuid": "7b234f43-b318-4029-82be-e3a6a57db2c5"
         },
         "lensFlare": {
             "xbsjType": "LensFlareStage",
-            "xbsjGuid": "bd5fbfbc-8a49-4aea-845e-4a8cdb1d8d36"
+            "xbsjGuid": "2c0acdd1-bf2a-43a5-9f0a-1c74dd4b5da6"
         },
         "mosaic": {
             "xbsjType": "MosaicStage",
-            "xbsjGuid": "abd4c12c-1ef0-4a61-af5a-51b03f41c729"
+            "xbsjGuid": "c2a043e8-62c5-4b76-80e8-fa1a7a5884a4"
         },
         "nightVision": {
             "xbsjType": "NightVisionStage",
-            "xbsjGuid": "333d93fe-afee-4555-a405-8618d1deb01f"
+            "xbsjGuid": "f72f364c-5ee6-4a40-a71d-8a44423cdaa3"
         },
         "silhouette": {
             "xbsjType": "XbsSilhouetteStage",
-            "xbsjGuid": "e65137b9-adb5-4505-b70a-ff4aafdd1338"
+            "xbsjGuid": "415a35aa-1c89-49f7-8ad7-6f90e50e18de"
         }
     },
     "effect": {
         "xbsjType": "Effect",
-        "xbsjGuid": "4573ae96-20b3-455f-a4d5-e79bbebcc841",
+        "xbsjGuid": "3fd201bc-245b-4e48-9925-597d4f90e8c9",
         "shadow": {
             "xbsjType": "Shadow",
-            "xbsjGuid": "91db1a5b-b11b-4eb5-8e63-8e41dcc7f7ba"
+            "xbsjGuid": "f2f95e25-c6cb-4480-b2d3-233d4d599b0b"
         },
         "forceSunPos": {
             "position": [
