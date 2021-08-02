@@ -56,23 +56,7 @@
                             "title": "倾斜",
                             "ref": "qx",
                             "expand": false,
-                            "children": [
-                                {
-                                    "czmObject": {
-                                        "xbsjType": "Tileset",
-                                        "xbsjGuid": "b272e672-12d7-4e39-ab37-6ad91fc26fc0",
-                                        "name": "倾斜测试",
-                                        "url": "https://lab.earthsdk.com/model/66327820ce5f11eab7a4adf1d6568ff7/tileset.json",
-                                        "xbsjPosition": [
-                                            1.9017002809975097,
-                                            0.5972446887154512,
-                                            7.8
-                                        ],
-                                        "xbsjUseOriginTransform": false,
-                                        "xbsjClippingPlanes": {},
-                                        "xbsjCustomShader": {}
-                                    }
-                                },{
+                            "children": [{
                                     "czmObject": {
                                         "xbsjType": "Tileset",
                                         "name": "BIM测试",
@@ -83,73 +67,9 @@
                                     }
                                 }
                             ]
-                        },
-                        {
-                            "title": "高程",
-                            "expand": false,
-                            "children": [
-                                {
-                                    "czmObject": {
-                                        "xbsjType": "Terrain",
-                                        "xbsjGuid": "78afc6fe-f1ab-4d97-a310-9ec6fd3ce672",
-                                        "name": "中国14级（测试）",
-                                        "xbsjTerrainProvider": {
-                                            "type": "XbsjCesiumTerrainProvider",
-                                            "XbsjEllipsoidTerrainProvider": {},
-                                            "XbsjCesiumTerrainProvider": {
-                                                "url": "https://lab.earthsdk.com/terrain/577fd5b0ac1f11e99dbd8fd044883638",
-                                                "requestVertexNormals": true,
-                                                "requestWaterMask": true
-                                            },
-                                            "GoogleEarthEnterpriseTerrainProvider": {}
-                                        }
-                                    }
-                                }
-                            ]
                         }
+                        
                     ]
-                },
-                {
-                    "title": "业务图层",
-                    "ref": "ywtc",
-                    "expand": false,
-                    "children": []
-                },
-                {
-                    "title": "事件图层",
-                    "ref": "sjtc",
-                    "children": []
-                },
-                {
-                    "ref": "model1",
-                    "czmObject": {
-                        "xbsjType": "Model",
-                        "xbsjGuid": "b81693d1-1b60-4b13-bf77-91864bfa8db1",
-                        "name": "汽车",
-                        "url": "./assets/gongjiao.glb",
-                        "distanceDisplayCondition": [
-                            0,
-                            5000
-                        ],
-                        "color": [
-                            1,
-                            0.09803921568627451,
-                            0,
-                            1
-                        ],
-                        "silhouetteColor": [
-                            0,
-                            0,
-                            0,
-                            1
-                        ],
-                        "luminanceAtZenith": 0.28,
-                        "xbsjPosition": [
-                            1.9017000290056187,
-                            0.5972157875530469,
-                            429.8448075340574
-                        ]
-                    }
                 }
             ]
         }

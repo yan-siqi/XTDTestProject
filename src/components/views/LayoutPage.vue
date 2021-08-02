@@ -24,6 +24,7 @@
 import earthGlobal from "@/global/earth/earthutils.js";
 import Json from "../../../public/scene.json";
 import XTDJSON from "../../../public/xtdJson.json";
+import TitlesJson from "../../../public/titles.json";
 import HeaderView from "../../components/appCom/HeaderContent";
 export default {
   name: "App",
@@ -37,9 +38,9 @@ export default {
     earthGlobal.earthcesium.earth = earth;
     earthGlobal.earthmaptool.setearth(earthGlobal.earthcesium);
     this._earth = earth;
-    this._earth.xbsjFromJSON(Json); // 展示当前影像json
+    //this._earth.xbsjFromJSON(Json); // 展示当前影像json
     //this._earth.xbsjFromJSON(XTDJSON); // 测试模型的平移旋转
-
+    this._earth.xbsjFromJSON(TitlesJson); // 设置3dtitles所用json
     window.earth = earth;
     //  / earth.camera.flyTo([2.0273210056641258, 0.6957050387098255, 1000]);
   },

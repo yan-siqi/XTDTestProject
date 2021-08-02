@@ -124,7 +124,8 @@ export default {
       this.isdianji = false;
       this.curxinxiColor = "#00ecfc";
       this.curyewuColor = "#f9b46a";
-      this.$router.push({ path: `/MainApp/Poltting` });
+      //this.$router.push({ path: `/MainApp/Poltting` });
+      this.$router.push({ path: `/cesiumTest` });
     },
     returnTomain() {
       this.$router.push({ path: `/MainApp` });
