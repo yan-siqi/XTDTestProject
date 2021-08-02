@@ -22,6 +22,7 @@
         "ref": "dayantaViewShedOfPath",
         "czmObject": {
             "xbsjType": "Path",
+             "name": "给大雁塔做视域分析所用路径",
             "positions": [
                 [
                     1.9016746584889261,

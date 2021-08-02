@@ -2,43 +2,43 @@
   <div class="contentxbsjTest">
     <ul class="mainContant">
       <li @click="curItemClick('manyou')">
-        场景漫游
+        场景漫游(Y)
         <div v-if="isManyou">
           <Manyou />
         </div>
       </li>
       <li @click="curItemClick('sprh')">
-        视频融合
+        视频融合(Y)
         <div v-if="isVideoConnect">
           <VideoConnect />
         </div>
       </li>
       <li @click="curItemClick('mapjq')">
-        mapv-集群
+        mapv-集群(Y)
         <div v-if="isJq">
           <Mapvjiqun />
         </div>
       </li>
       <li @click="curItemClick('mapvrlt')">
-        热力图
+        热力图(Y)
         <div v-if="isheatmap">
           <HeatMap />
         </div>
       </li>
       <li @click="curItemClick('sy')">
-        视域
+        视域(Y)
         <div v-if="isVision">
           <Vision />
         </div>
       </li>
       <li @click="curItemClick('surface')">
-        地下模式和地表透明
+        地下模式和地表透明(Y)
         <div v-if="isSurface">
           <Surface />
         </div>
       </li>
       <li @click="curItemClick('dantihua')">
-        测试单体化+编辑
+        测试单体化+编辑(Gs)
         <div v-if="isDantihua">
           <Dantihua />
         </div>
@@ -61,25 +61,25 @@
         </div>
       </li>
       <li @click="curItemClick('lujinghuanqiufeixing')">
-        路径-环球飞行
+        路径-环球飞行(GS)
         <div v-if="isAllWorld">
           <PathAllAround />
         </div>
       </li>
       <li @click="curItemClick('lujingcurrentD')">
-        路径-currentD
+        路径-currentD(GS)
         <div v-if="isCurrentD">
           <PathCurrentD />
         </div>
       </li>
       <li @click="curItemClick('lujingDireaction')">
-        路径-方向
+        路径-方向(GS)
         <div v-if="isPathDirection">
           <PathDireaction />
         </div>
       </li>
       <li @click="curItemClick('lujingEdit')">
-        路径-编辑
+        路径-编辑(GS)
         <span style="position: absolute; right: 0; top: 0" v-show="isShowTime"
           >剩余加载时间{{ time }}s</span
         >
@@ -88,13 +88,13 @@
         </div>
       </li>
       <li @click="curItemClick('lujingYingyantu')">
-        路径-鹰眼图
+        路径-鹰眼图(GS)
         <div v-if="isPathYingyantu">
           <PathYingyan />
         </div>
       </li>
       <li @click="curItemClick('lujingShiyufenxi')">
-        路径-视域分析
+        路径-视域分析(Y)
         <div v-if="isPathShiyufenxi">
           <PathShiyuFenxi />
         </div>

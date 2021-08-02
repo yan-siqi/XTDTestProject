@@ -78,13 +78,13 @@ export default {
     },
     // 初始化视域分析
     initshiyufenxi() {
-      console.log(this.playing, "当前路径的状态");
       let earth = window.earth;
       // 定义视域分析
       var viewshed = earth.sceneTree.$refs.dayantaViewShed.czmObject;
       this._viewshed = viewshed;
       // 视域分析追随的路径
       var path1 = earth.sceneTree.$refs.dayantaViewShedOfPath.czmObject;
+      //var path1 = earth.sceneTree.$refs.beiyongPath.czmObject;// 采用自己手绘路径
       earth.camera.position = [
         1.901699952569712,
         0.5971691902914926,
